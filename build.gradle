@@ -1,0 +1,17 @@
+group 'simplesolution.dev'
+version '1.0.0'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "simplesolution.dev.EmbeddedJettyFileServer"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.15.v20190215'
+}
